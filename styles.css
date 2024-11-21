@@ -6,25 +6,55 @@
 html, body {
     height: 100%;
     width: 100%;
-
+    margin: 0;
 }
 
-.header, .navbar, .footer {
+.header, .navbar, .footer, .title-content, .header-section {
     background-color: #1F2937
 }
 
-.header, .footer {
+.header-section {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
     padding-left: 100px;
     padding-right: 100px;
 }
 
+.title-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-secondary {
+    margin-top: -25px;
+}
+
 .navbar {
     display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 5px;
+}
+
+.header-links {
+    display: flex;
+    gap: 10px;
     align-items: center;
-    justify-content: center;
+}
+
+.header-image {
+    flex-basis: 200px;
+    flex-shrink: 1;
+}
+
+.header-text {
+    flex-basis: 200px;
     flex-shrink: 0;
 }
 
@@ -74,14 +104,24 @@ button {
     padding: 5px;
     margin-bottom: 10px;
     width: 100px;
+    border-radius: 10px;
 }
 
-/* Rounded corners */
+.info-section {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-shrink: 1;
+}
 
 .image-grid {
     display: flex;
     gap: 10px;
-
+    flex-wrap: wrap;
 }
 
 /* Need to make these wrap */
@@ -91,12 +131,21 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: 1px solid #3882f6;
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
 }
 
 /* Rounded corners */
 
 .quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #E5E7EB;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 blockquote > p {
@@ -107,7 +156,53 @@ blockquote > footer {
     text-align: right;;
 }
 
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height:300px;
+
+}
 .action-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: #3882f6;
     color: #F9FAF8;
+    width: 1500px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.action-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.action-text > p {
+    margin-top: -15px;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px white solid;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
 }
